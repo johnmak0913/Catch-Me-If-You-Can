@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2010981401
+    locked: 0
+  - name: TeacherTable
+    uniqueID: 4280366107
+    locked: 0
+  - name: FrontStudentTables
+    uniqueID: 879333025
+    locked: 0
+  - name: FrontChairs
+    uniqueID: 1980252983
+    locked: 0
+  - name: BackStudentTables
+    uniqueID: 1407089459
+    locked: 0
+  - name: BackChairs
+    uniqueID: 1712689143
+    locked: 0
+  - name: UI
+    uniqueID: 3383052307
+    locked: 0
