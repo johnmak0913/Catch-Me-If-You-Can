@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 6ffcdd06ef52c294fba834a9a8370585
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9084945052986816359
+    second: OldTeacherTurn_0
+  - first:
+      213: -6500425429465813211
+    second: OldTeacherTurn_1
+  - first:
+      213: 3703742945124060162
+    second: OldTeacherTurn_2
+  - first:
+      213: -6972602005650989115
+    second: OldTeacherTurn_3
+  - first:
+      213: -2862069646077435441
+    second: OldTeacherTurn_4
+  - first:
+      213: 1677177015662222242
+    second: OldTeacherTurn_5
+  - first:
+      213: -54063632672754955
+    second: OldTeacherTurn_6
+  - first:
+      213: -2125876314404807836
+    second: OldTeacherTurn_7
+  - first:
+      213: -2080739313474301919
+    second: OldTeacherTurn_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +102,210 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: OldTeacherTurn_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 28
+        width: 204
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767b83f3465341e70800000000000000
+      internalID: 9084945052986816359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 28
+        width: 205
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f26cb3389d9c5a0800000000000000
+      internalID: -6500425429465813211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_2
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 30
+        width: 210
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c8a77d596566330800000000000000
+      internalID: 3703742945124060162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_3
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 31
+        width: 224
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf1ff41b675c3f90800000000000000
+      internalID: -6972602005650989115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 32
+        width: 196
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1602f12d2e748d0800000000000000
+      internalID: -2862069646077435441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_5
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 34
+        width: 198
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab1ff31c97864710800000000000000
+      internalID: 1677177015662222242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_6
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 36
+        width: 197
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2f54b996def3ff0800000000000000
+      internalID: -54063632672754955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_7
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 23
+        width: 196
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b1c7361ce5f72e0800000000000000
+      internalID: -2125876314404807836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldTeacherTurn_8
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 25
+        width: 195
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1209c2e5e9abf13e0800000000000000
+      internalID: -2080739313474301919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

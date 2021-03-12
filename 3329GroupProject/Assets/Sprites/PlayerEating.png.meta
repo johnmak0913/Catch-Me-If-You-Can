@@ -1,7 +1,70 @@
 fileFormatVersion: 2
 guid: 71a47e624f5fc4147b00a439a06e0739
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1737430988015344742
+    second: PlayerEating_0
+  - first:
+      213: -3532836722164985423
+    second: PlayerEating_1
+  - first:
+      213: -5622733958538039795
+    second: PlayerEating_2
+  - first:
+      213: 353902492245994461
+    second: PlayerEating_3
+  - first:
+      213: 1767493529070999683
+    second: PlayerEating_4
+  - first:
+      213: -2639916074347965911
+    second: PlayerEating_5
+  - first:
+      213: 9141421071360754285
+    second: PlayerEating_6
+  - first:
+      213: -5998023239156117374
+    second: PlayerEating_7
+  - first:
+      213: 668326620023748067
+    second: PlayerEating_8
+  - first:
+      213: 9082380060035489677
+    second: PlayerEating_9
+  - first:
+      213: 4570650173237788861
+    second: PlayerEating_10
+  - first:
+      213: -8528989796824335175
+    second: PlayerEating_11
+  - first:
+      213: 422505109539248180
+    second: PlayerEating_12
+  - first:
+      213: 240264784829771013
+    second: PlayerEating_13
+  - first:
+      213: 2508060781675641792
+    second: PlayerEating_14
+  - first:
+      213: 5368981249335628422
+    second: PlayerEating_15
+  - first:
+      213: 3279196617381322451
+    second: PlayerEating_16
+  - first:
+      213: -9160611545267159522
+    second: PlayerEating_17
+  - first:
+      213: -8763572136525567197
+    second: PlayerEating_18
+  - first:
+      213: 7124638290916539819
+    second: PlayerEating_19
+  - first:
+      213: 6680498563053078641
+    second: PlayerEating_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +104,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +138,462 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PlayerEating_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 211
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93e691c8b763e7e0800000000000000
+      internalID: -1737430988015344742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 20
+        width: 205
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b196ed08b7d8fec0800000000000000
+      internalID: -3532836722164985423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_2
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e60d6514908f1b0800000000000000
+      internalID: -5622733958538039795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 20
+        width: 205
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddba27f017059e400800000000000000
+      internalID: 353902492245994461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_4
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38814170006678810800000000000000
+      internalID: 1767493529070999683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_5
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 20
+        width: 205
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92255a731522d5bd0800000000000000
+      internalID: -2639916074347965911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_6
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d628ab4f70adcde70800000000000000
+      internalID: 9141421071360754285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_7
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 20
+        width: 205
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280df8394adb2cca0800000000000000
+      internalID: -5998023239156117374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_8
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5f37c158f564900800000000000000
+      internalID: 668326620023748067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_9
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 20
+        width: 205
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f91894b881b0e70800000000000000
+      internalID: 9082380060035489677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_10
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db08a60cd163e6f30800000000000000
+      internalID: 4570650173237788861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 20
+        width: 205
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcba53e7f0f2a980800000000000000
+      internalID: -8528989796824335175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_12
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438dfd9982a0dd500800000000000000
+      internalID: 422505109539248180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_13
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 20
+        width: 210
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d60df7c87955300800000000000000
+      internalID: 240264784829771013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_14
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 20
+        width: 210
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb7dde1efb6ec220800000000000000
+      internalID: 2508060781675641792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_15
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 20
+        width: 211
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682126c0004728a40800000000000000
+      internalID: 5368981249335628422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_16
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 20
+        width: 211
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de1da713fb028d20800000000000000
+      internalID: 3279196617381322451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_17
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 20
+        width: 211
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e3207a558fed080800000000000000
+      internalID: -9160611545267159522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_18
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 20
+        width: 211
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32be1eeb299816680800000000000000
+      internalID: -8763572136525567197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_19
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 20
+        width: 211
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badf93317cccfd260800000000000000
+      internalID: 7124638290916539819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerEating_20
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 20
+        width: 210
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178494d5c06e5bc50800000000000000
+      internalID: 6680498563053078641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
