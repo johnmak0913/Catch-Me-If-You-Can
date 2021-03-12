@@ -17,7 +17,6 @@ public class TeacherWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float step = speed * Time.deltaTime;
         if(transform.position == rightBoundary)
         {
             targetPosition = leftBoundary;
@@ -26,6 +25,8 @@ public class TeacherWalk : MonoBehaviour
         {
             targetPosition = rightBoundary;
         }
+        float step = speed * Time.deltaTime;
+        //Walk
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
     }
 }
