@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 2010981401
     locked: 0
+  - name: Teacher
+    uniqueID: 4040349595
+    locked: 0
   - name: TeacherTable
     uniqueID: 4280366107
     locked: 0
