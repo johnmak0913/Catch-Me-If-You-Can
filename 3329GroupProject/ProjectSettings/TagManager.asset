@@ -50,17 +50,8 @@ TagManager:
   - name: TeacherTable
     uniqueID: 4280366107
     locked: 0
-  - name: FrontStudentTables
+  - name: Students
     uniqueID: 879333025
-    locked: 0
-  - name: FrontChairs
-    uniqueID: 1980252983
-    locked: 0
-  - name: BackStudentTables
-    uniqueID: 1407089459
-    locked: 0
-  - name: BackChairs
-    uniqueID: 1712689143
     locked: 0
   - name: UI
     uniqueID: 3383052307
