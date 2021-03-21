@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: 3783207a24fa7444eab2efa867d5fced
+guid: 7746c6396171ab4439df175bcc32be7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9013273980852081495
-    second: PlayerBrownEat_0
+      213: -7395003922960292575
+    second: playereatingbrown -realigned_0
   - first:
-      213: 504824757823906402
-    second: PlayerBrownEat_1
+      213: -6584249213279250617
+    second: playereatingbrown -realigned_1
   - first:
-      213: -4578831905024759164
-    second: PlayerBrownEat_2
+      213: 7614379680136292102
+    second: playereatingbrown -realigned_2
   - first:
-      213: 4238316913971925340
-    second: PlayerBrownEat_3
+      213: 4136733567520850423
+    second: playereatingbrown -realigned_3
   - first:
-      213: -1331875219402984904
-    second: PlayerBrownEat_4
+      213: 2021199474194416438
+    second: playereatingbrown -realigned_4
   - first:
-      213: 3656393395258629968
-    second: PlayerBrownEat_5
+      213: 4503426215728355727
+    second: playereatingbrown -realigned_5
   - first:
-      213: -5513379497220265846
-    second: PlayerBrownEat_6
+      213: 7099652458645092668
+    second: playereatingbrown -realigned_6
   - first:
-      213: 1485391076517191447
-    second: PlayerBrownEat_7
+      213: -4659435252708034944
+    second: playereatingbrown -realigned_7
   - first:
-      213: 5575343984521585060
-    second: PlayerBrownEat_8
+      213: -6822151757406665372
+    second: playereatingbrown -realigned_8
   - first:
-      213: -5972175698723987821
-    second: PlayerBrownEat_9
+      213: 5561345202049520387
+    second: playereatingbrown -realigned_9
   - first:
-      213: 5904468119172241205
-    second: PlayerBrownEat_10
+      213: -2111308313507743596
+    second: playereatingbrown -realigned_10
   - first:
-      213: 4783540231971708404
-    second: PlayerBrownEat_11
+      213: 6141448817653472533
+    second: playereatingbrown -realigned_11
   - first:
-      213: -449080104047145224
-    second: PlayerBrownEat_12
+      213: 1945750045097346513
+    second: playereatingbrown -realigned_12
   - first:
-      213: -4352388416687644772
-    second: PlayerBrownEat_13
+      213: 7654587201539927432
+    second: playereatingbrown -realigned_13
   - first:
-      213: -5174954019177071036
-    second: PlayerBrownEat_14
+      213: -4012727279213619205
+    second: playereatingbrown -realigned_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,320 +132,332 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerBrownEat_0
+      name: playereatingbrown -realigned_0
       rect:
         serializedVersion: 2
         x: 9
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac6a0c911b6ae280800000000000000
-      internalID: -9013273980852081495
+      spriteID: 125e45bcc1baf5990800000000000000
+      internalID: -7395003922960292575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_1
+      name: playereatingbrown -realigned_1
       rect:
         serializedVersion: 2
         x: 333
         y: 13
-        width: 308
+        width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262aaeb417f710700800000000000000
-      internalID: 504824757823906402
+      spriteID: 74758d1b93c00a4a0800000000000000
+      internalID: -6584249213279250617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_2
+      name: playereatingbrown -realigned_2
       rect:
         serializedVersion: 2
         x: 657
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48a26ce54a8b470c0800000000000000
-      internalID: -4578831905024759164
+      spriteID: 607e973f9f5bba960800000000000000
+      internalID: 7614379680136292102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_3
+      name: playereatingbrown -realigned_3
       rect:
         serializedVersion: 2
         x: 981
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5193d617c681da30800000000000000
-      internalID: 4238316913971925340
+      spriteID: 7f1c3862341a86930800000000000000
+      internalID: 4136733567520850423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_4
+      name: playereatingbrown -realigned_4
       rect:
         serializedVersion: 2
-        x: 1304
+        x: 1305
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 832f6566b8a348de0800000000000000
-      internalID: -1331875219402984904
+      spriteID: 6338097863ebc0c10800000000000000
+      internalID: 2021199474194416438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_5
+      name: playereatingbrown -realigned_5
       rect:
         serializedVersion: 2
         x: 1629
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05f997bab6e1eb230800000000000000
-      internalID: 3656393395258629968
+      spriteID: f899ba478426f7e30800000000000000
+      internalID: 4503426215728355727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_6
+      name: playereatingbrown -realigned_6
       rect:
         serializedVersion: 2
         x: 1953
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88a344fe8a8c73b0800000000000000
-      internalID: -5513379497220265846
+      spriteID: c39f44aab48078260800000000000000
+      internalID: 7099652458645092668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_7
+      name: playereatingbrown -realigned_7
       rect:
         serializedVersion: 2
         x: 2277
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f975c605b2d9410800000000000000
-      internalID: 1485391076517191447
+      spriteID: 086b76c035c565fb0800000000000000
+      internalID: -4659435252708034944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_8
+      name: playereatingbrown -realigned_8
       rect:
         serializedVersion: 2
         x: 2601
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a1250280d99f5d40800000000000000
-      internalID: 5575343984521585060
+      spriteID: 46508f73f19d251a0800000000000000
+      internalID: -6822151757406665372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_9
+      name: playereatingbrown -realigned_9
       rect:
         serializedVersion: 2
-        x: 2924
+        x: 2925
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e165d08d19e1da0800000000000000
-      internalID: -5972175698723987821
+      spriteID: 3031c79fefddd2d40800000000000000
+      internalID: 5561345202049520387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_10
+      name: playereatingbrown -realigned_10
       rect:
         serializedVersion: 2
         x: 3249
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53751ee9872e0f150800000000000000
-      internalID: 5904468119172241205
+      spriteID: 498ba0a664023b2e0800000000000000
+      internalID: -2111308313507743596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_11
+      name: playereatingbrown -realigned_11
       rect:
         serializedVersion: 2
         x: 3573
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fd96772f7c826240800000000000000
-      internalID: 4783540231971708404
+      spriteID: 51d5a7e292fca3550800000000000000
+      internalID: 6141448817653472533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_12
+      name: playereatingbrown -realigned_12
       rect:
         serializedVersion: 2
         x: 3897
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fe0392560c84c9f0800000000000000
-      internalID: -449080104047145224
+      spriteID: 1d54ab36b51b00b10800000000000000
+      internalID: 1945750045097346513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_13
+      name: playereatingbrown -realigned_13
       rect:
         serializedVersion: 2
         x: 4221
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9fdec28bc53993c0800000000000000
-      internalID: -4352388416687644772
+      spriteID: 88de90a018e8a3a60800000000000000
+      internalID: 7654587201539927432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBrownEat_14
+      name: playereatingbrown -realigned_14
       rect:
         serializedVersion: 2
-        x: 4544
+        x: 4545
         y: 13
         width: 305
         height: 373
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44e78f5dcbede28b0800000000000000
-      internalID: -5174954019177071036
+      spriteID: bf7d3f5cccdef48c0800000000000000
+      internalID: -4012727279213619205
       vertices: []
       indices: 
       edges: []
