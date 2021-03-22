@@ -974,7 +974,7 @@ GameObject:
   - component: {fileID: 1775443288}
   - component: {fileID: 1775443290}
   m_Layer: 0
-  m_Name: playereatingbrown -realigned_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
