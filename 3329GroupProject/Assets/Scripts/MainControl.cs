@@ -10,8 +10,9 @@ public class MainControl : MonoBehaviour
     public float timeLeft=60.0f;
     public float turnAroundDelay=1.0f;
     public float tTurnTimeLeft=-10.0f, tBackTimeLeft=-10.0f;
-    public bool tTurnWaiting=false, tBackWaiting=false;
+    private bool tTurnWaiting=false, tBackWaiting=false;
     public TeacherMovement teacher;
+    private bool caught=false;
 
     bool updateTimer() {
         timeLeft-=Time.deltaTime;
@@ -50,6 +51,11 @@ public class MainControl : MonoBehaviour
             }
         }
         else if(teacherTurnedAround()) {
+            if(caught) {
+                tBackTimeLeft=2f;
+                caught=false;
+                return;
+            }
             if(!tBackWaiting) {
                 tBackWaiting=true;
                 tBackTimeLeft=UnityEngine.Random.Range(3.0f, 5.0f);
@@ -65,6 +71,7 @@ public class MainControl : MonoBehaviour
         }
     }
     public void getCaught() {
+        caught=true;
         teacher.animator.SetBool("caught", true);
     }
     // Start is called before the first frame update
