@@ -10,6 +10,8 @@ public class TeacherMovement : MonoBehaviour
     Vector3 targetPosition;
     public Animator animator;
     public bool preTurnAround=false;
+    PlayerAnimation pAnim;
+    MainControl control;
     // Start is called before the first frame update
 
     void turnAround() {
@@ -19,8 +21,10 @@ public class TeacherMovement : MonoBehaviour
 
     void Start()
     {
+        control=GameObject.Find("MainControl").GetComponent<MainControl>();
         targetPosition = rightBoundary;
         animator=GetComponent<Animator>();
+        pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame

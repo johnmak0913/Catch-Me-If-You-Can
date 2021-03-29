@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 9ffad67922ec301488d459aacb8c71bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 661402102009087194
+    second: playereatblonde_0
+  - first:
+      213: 7410696720022356517
+    second: playereatblonde_1
+  - first:
+      213: 3188789465088312735
+    second: playereatblonde_2
+  - first:
+      213: -1272166960899955713
+    second: playereatblonde_3
+  - first:
+      213: -1176562296523013499
+    second: playereatblonde_4
+  - first:
+      213: -8071247838868784504
+    second: playereatblonde_5
+  - first:
+      213: -7871088676416020324
+    second: playereatblonde_6
+  - first:
+      213: -2474461920238238457
+    second: playereatblonde_7
+  - first:
+      213: -3137103182950360522
+    second: playereatblonde_8
+  - first:
+      213: 2405984558379220733
+    second: playereatblonde_9
+  - first:
+      213: 4924149792079152920
+    second: playereatblonde_10
+  - first:
+      213: 4063399697266407629
+    second: playereatblonde_11
+  - first:
+      213: 4841003816158616805
+    second: playereatblonde_12
+  - first:
+      213: -6898170795917182659
+    second: playereatblonde_13
+  - first:
+      213: -6854865805578113083
+    second: playereatblonde_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playereatblonde_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 309
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4c2ff15b5cd2900800000000000000
+      internalID: 661402102009087194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 11
+        width: 311
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522c51f376518d660800000000000000
+      internalID: 7410696720022356517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 11
+        width: 309
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95c812af1bd04c20800000000000000
+      internalID: 3188789465088312735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_3
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 11
+        width: 311
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3e198a3ea585ee0800000000000000
+      internalID: -1272166960899955713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_4
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 11
+        width: 308
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582c0a333d20cafe0800000000000000
+      internalID: -1176562296523013499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_5
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 11
+        width: 311
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a36169ada2dff80800000000000000
+      internalID: -8071247838868784504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_6
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 11
+        width: 310
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90af963d8644c290800000000000000
+      internalID: -7871088676416020324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_7
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 11
+        width: 309
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70508f96ef1f8add0800000000000000
+      internalID: -2474461920238238457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_8
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 11
+        width: 310
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a1f74b645c674d0800000000000000
+      internalID: -3137103182950360522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_9
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 11
+        width: 308
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfeb4495536c36120800000000000000
+      internalID: 2405984558379220733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_10
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 11
+        width: 310
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81701b98528165440800000000000000
+      internalID: 4924149792079152920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_11
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 11
+        width: 308
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc87effee78146830800000000000000
+      internalID: 4063399697266407629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_12
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 11
+        width: 311
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecd1727253be2340800000000000000
+      internalID: 4841003816158616805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_13
+      rect:
+        serializedVersion: 2
+        x: 4220
+        y: 11
+        width: 309
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39f16d8536c440a0800000000000000
+      internalID: -6898170795917182659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playereatblonde_14
+      rect:
+        serializedVersion: 2
+        x: 4543
+        y: 11
+        width: 311
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf6b835edf9ed0a0800000000000000
+      internalID: -6854865805578113083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

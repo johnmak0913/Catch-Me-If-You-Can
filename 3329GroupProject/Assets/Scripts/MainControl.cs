@@ -12,7 +12,8 @@ public class MainControl : MonoBehaviour
     public float tTurnTimeLeft=-10.0f, tBackTimeLeft=-10.0f;
     private bool tTurnWaiting=false, tBackWaiting=false;
     public TeacherMovement teacher;
-    private bool caught=false;
+    PlayerAnimation pAnim;
+    private bool caught=false, playerResume=false;
 
     bool updateTimer() {
         timeLeft-=Time.deltaTime;
@@ -54,6 +55,7 @@ public class MainControl : MonoBehaviour
             if(caught) {
                 tBackTimeLeft=2f;
                 caught=false;
+                playerResume=true;
                 return;
             }
             if(!tBackWaiting) {
@@ -62,6 +64,10 @@ public class MainControl : MonoBehaviour
                 return;
             }
             if(tBackTimeLeft<=0f) {
+                if(playerResume) {
+                    playerResume=false;
+                    pAnim.act();
+                }
                 teacherTurnBack();
                 tTurnWaiting=false;
             }
@@ -78,8 +84,9 @@ public class MainControl : MonoBehaviour
     void Start()
     {
         teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
-        eating=new Action(KeyCode.E, 3, 3, 1);
-        sleeping=new Action(KeyCode.Z, 5, 2, 2);
+        pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
+        eating=new Action("Player_Eating", KeyCode.E, 3, 3, 1, -0.08f, 0.01f);
+        sleeping=new Action("Player_Sleeping",KeyCode.Z, 5, 2, 2);
         timeLeft=60.0f;
     }
 
@@ -87,10 +94,10 @@ public class MainControl : MonoBehaviour
     void Update()
     {   
         teacherRandomlyTurnAround();
-        if(!updateTimer()) {
+        /*if(!updateTimer()) {
             Debug.Log("Time's up");
             return;
-        }
+        }*/
         if(Input.GetKey(KeyCode.R)) {
             teacherTurnBack();
         }
