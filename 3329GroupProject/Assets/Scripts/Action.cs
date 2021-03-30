@@ -66,8 +66,8 @@ public class Action : MonoBehaviour {
             else if((DateTime.Now-startTime).TotalSeconds>=holdFor) {
                 act();
                 Debug.Log("Action finished: "+actionKey);
-                control.marks+=marks;
-                Debug.Log("Marks: "+control.marks);
+                control.level.marks+=marks;
+                Debug.Log("Marks: "+control.level.marks);
                 startCooldown();
                 startTime=DateTime.Now;
                 finish=true;

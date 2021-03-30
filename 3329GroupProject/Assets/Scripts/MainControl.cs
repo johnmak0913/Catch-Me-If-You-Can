@@ -6,23 +6,23 @@ using System;
 public class MainControl : MonoBehaviour
 {
     private Action eating, sleeping;
-    public int marks=0;
-    public float timeLeft=60.0f;
     public float turnAroundDelay=1.0f;
     public float tTurnTimeLeft=-10.0f, tBackTimeLeft=-10.0f;
     private bool tTurnWaiting=false, tBackWaiting=false;
     public TeacherMovement teacher;
     PlayerAnimation pAnim;
     private bool caught=false, playerResume=false;
+    public Level levels;
+    public Level level;
 
     bool updateTimer() {
-        timeLeft-=Time.deltaTime;
-        return timeLeft>=0;
+        level.timeLeft-=Time.deltaTime;
+        return level.timeLeft>=0;
     }
     void teacherTurnAround() {
         teacher.preTurnAround=true;
         teacher.animator.SetBool("preTurnAround", true);
-        teacher.Invoke("turnAround", turnAroundDelay);
+        teacher.Invoke("turnAround", level.tTurnDelay);
     }
     void teacherTurnBack() {
         teacher.animator.SetBool("turnAround", false);
@@ -34,14 +34,14 @@ public class MainControl : MonoBehaviour
         return teacher.animator.GetBool("turnAround");
     }
     public bool teacherIsWalking() {
-        return teacher.animator.GetCurrentAnimatorStateInfo(0).IsName("OldTeacher_Walk");
+        return teacher.animator.GetCurrentAnimatorStateInfo(0).IsName(level.teacherName+"_Walk");
     }
     void teacherRandomlyTurnAround() {
         if(teacherIsWalking()) {
             if(!tTurnWaiting) {
                 tTurnWaiting=true;
                 tBackWaiting=false;
-                tTurnTimeLeft=UnityEngine.Random.Range(7.0f, 10.0f);
+                tTurnTimeLeft=UnityEngine.Random.Range(7.0f, level.tTurnPeriod);
                 return;
             }
             if(tTurnTimeLeft<=0) {
@@ -60,7 +60,8 @@ public class MainControl : MonoBehaviour
             }
             if(!tBackWaiting) {
                 tBackWaiting=true;
-                tBackTimeLeft=UnityEngine.Random.Range(3.0f, 5.0f);
+                //tBackTimeLeft=UnityEngine.Random.Range(3.0f, 5.0f);
+                tBackTimeLeft=3f;
                 return;
             }
             if(tBackTimeLeft<=0f) {
@@ -83,16 +84,22 @@ public class MainControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
+        GameObject.Find("OldTeacher_old").SetActive(false);
+        //teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
         eating=new Action("Player_Eating", KeyCode.E, 3, 3, 1, -0.08f, 0.01f);
         sleeping=new Action("Player_Sleeping",KeyCode.Z, 5, 2, 2);
-        timeLeft=60.0f;
+        level=new Level("OldTeacher", 60, 60, 1f, 10f);
+        level.start();
+        teacher=level.teacher;
     }
 
     // Update is called once per frame
     void Update()
     {   
+        if(teacher==null) {
+            return;
+        }
         teacherRandomlyTurnAround();
         /*if(!updateTimer()) {
             Debug.Log("Time's up");
