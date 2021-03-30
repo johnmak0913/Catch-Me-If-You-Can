@@ -30,7 +30,7 @@ public class TeacherMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(animator.GetBool("turnAround") || !animator.GetCurrentAnimatorStateInfo(0).IsName("OldTeacher_Walk") || preTurnAround) {
+        if(animator.GetBool("turnAround") || !control.teacherIsWalking() || preTurnAround) {
             return;
         }
         if(transform.position == rightBoundary)
