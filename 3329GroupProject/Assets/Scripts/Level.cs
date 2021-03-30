@@ -27,4 +27,8 @@ public class Level : MonoBehaviour
     public void end() {
         Destroy(teacherObj);
     }
+    bool updateTimer() {
+        timeLeft-=Time.deltaTime;
+        return timeLeft>=0;
+    }
 }

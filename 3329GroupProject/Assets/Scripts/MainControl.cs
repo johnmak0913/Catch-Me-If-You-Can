@@ -6,7 +6,6 @@ using System;
 public class MainControl : MonoBehaviour
 {
     private Action eating, sleeping;
-    public float turnAroundDelay=1.0f;
     public float tTurnTimeLeft=-10.0f, tBackTimeLeft=-10.0f;
     private bool tTurnWaiting=false, tBackWaiting=false;
     public TeacherMovement teacher;
@@ -15,10 +14,6 @@ public class MainControl : MonoBehaviour
     public Level levels;
     public Level level;
 
-    bool updateTimer() {
-        level.timeLeft-=Time.deltaTime;
-        return level.timeLeft>=0;
-    }
     void teacherTurnAround() {
         teacher.preTurnAround=true;
         teacher.animator.SetBool("preTurnAround", true);
@@ -101,16 +96,10 @@ public class MainControl : MonoBehaviour
             return;
         }
         teacherRandomlyTurnAround();
-        /*if(!updateTimer()) {
+        /*if(!level.updateTimer()) {
             Debug.Log("Time's up");
             return;
         }*/
-        if(Input.GetKey(KeyCode.R)) {
-            teacherTurnBack();
-        }
-        if(Input.GetKey(KeyCode.T)) {
-            teacherTurnAround();
-        }
         if(eating.check())
             return;
         if(sleeping.check())
