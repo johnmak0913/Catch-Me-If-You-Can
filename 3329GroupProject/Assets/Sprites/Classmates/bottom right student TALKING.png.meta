@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 080066ac07bfcae49976f174e54cd325
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1449865072454969086
+    second: bottom right student TALKING_0
+  - first:
+      213: -4394599806298945856
+    second: bottom right student TALKING_1
+  - first:
+      213: 2920835766054141092
+    second: bottom right student TALKING_2
+  - first:
+      213: 1649945593999958941
+    second: bottom right student TALKING_3
+  - first:
+      213: 5283314135356715888
+    second: bottom right student TALKING_4
+  - first:
+      213: 3618583761985835485
+    second: bottom right student TALKING_5
+  - first:
+      213: -4379698353459819200
+    second: bottom right student TALKING_6
+  - first:
+      213: -8435306080333051994
+    second: bottom right student TALKING_7
+  - first:
+      213: 1308684163721592517
+    second: bottom right student TALKING_8
+  - first:
+      213: 5375410761776410424
+    second: bottom right student TALKING_9
+  - first:
+      213: -966694235207724682
+    second: bottom right student TALKING_10
+  - first:
+      213: 3922216174238735160
+    second: bottom right student TALKING_11
+  - first:
+      213: 1813429788064590266
+    second: bottom right student TALKING_12
+  - first:
+      213: -3660778039165682659
+    second: bottom right student TALKING_13
+  - first:
+      213: 1923407832823967918
+    second: bottom right student TALKING_14
+  - first:
+      213: -6041002034379143536
+    second: bottom right student TALKING_15
+  - first:
+      213: -5494373702362430885
+    second: bottom right student TALKING_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bottom right student TALKING_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2095318f56b01ebe0800000000000000
+      internalID: -1449865072454969086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c60d8f72ce3303c0800000000000000
+      internalID: -4394599806298945856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_2
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb9ea67a4e88820800000000000000
+      internalID: 2920835766054141092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_3
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93a615a6c8c5e610800000000000000
+      internalID: 1649945593999958941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_4
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 12
+        width: 314
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073bcb2c63a125940800000000000000
+      internalID: 5283314135356715888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_5
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1992b62cac73230800000000000000
+      internalID: 3618583761985835485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_6
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 12
+        width: 313
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d0aaa5d8f2833c0800000000000000
+      internalID: -4379698353459819200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_7
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a74e06efc5cfea80800000000000000
+      internalID: -8435306080333051994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_8
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cefdcd2051692210800000000000000
+      internalID: 1308684163721592517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_9
+      rect:
+        serializedVersion: 2
+        x: 2922
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fae719b9b499a40800000000000000
+      internalID: 5375410761776410424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_10
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671960007bc9592f0800000000000000
+      internalID: -966694235207724682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_11
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b9ac564d28e6630800000000000000
+      internalID: 3922216174238735160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_12
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9a3b6c8c89a2910800000000000000
+      internalID: 1813429788064590266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_13
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c7afdd4cd423dc0800000000000000
+      internalID: -3660778039165682659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_14
+      rect:
+        serializedVersion: 2
+        x: 4541
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea03da9bb3151ba10800000000000000
+      internalID: 1923407832823967918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_15
+      rect:
+        serializedVersion: 2
+        x: 4867
+        y: 12
+        width: 311
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0964b6508ac0a2ca0800000000000000
+      internalID: -6041002034379143536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom right student TALKING_16
+      rect:
+        serializedVersion: 2
+        x: 5189
+        y: 12
+        width: 312
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5280776a3010c3b0800000000000000
+      internalID: -5494373702362430885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

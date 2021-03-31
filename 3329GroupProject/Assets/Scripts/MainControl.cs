@@ -5,7 +5,7 @@ using System;
 
 public class MainControl : MonoBehaviour
 {
-    private Action eating, sleeping;
+    private List<Action> actions=new List<Action>();
     public float tTurnTimeLeft=-10.0f, tBackTimeLeft=-10.0f;
     private bool tTurnWaiting=false, tBackWaiting=false;
     public TeacherMovement teacher;
@@ -82,8 +82,9 @@ public class MainControl : MonoBehaviour
         GameObject.Find("OldTeacher_old").SetActive(false);
         //teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
-        eating=new Action("Player_Eating", KeyCode.E, 3, 3, 1, -0.08f, 0.01f);
-        sleeping=new Action("Player_Sleeping",KeyCode.Z, 5, 2, 2);
+        actions.Add(new Action("Player_Eating", KeyCode.E, 3, 3, 1, -0.08f, 0.01f));
+        actions.Add(new Action("Player_Sleeping",KeyCode.S, 3, 2, 2, 0.04f, -0.05f));
+        actions.Add(new Action("Player_Talking",KeyCode.T, 3, 2, 3, 0.07f, 0.08f));
         level=new Level("OldTeacher", 60, 60, 1f, 10f);
         level.start();
         teacher=level.teacher;
@@ -100,9 +101,10 @@ public class MainControl : MonoBehaviour
             Debug.Log("Time's up");
             return;
         }*/
-        if(eating.check())
-            return;
-        if(sleeping.check())
-            return;
+        foreach(Action action in actions) {
+            if(action.check()) {
+                break;
+            }
+        }
     }
 }

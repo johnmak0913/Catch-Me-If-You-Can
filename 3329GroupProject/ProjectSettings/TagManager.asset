@@ -50,8 +50,11 @@ TagManager:
   - name: TeacherTable
     uniqueID: 4280366107
     locked: 0
-  - name: Students
+  - name: Students_FirstRow
     uniqueID: 879333025
+    locked: 0
+  - name: Students_LastRow
+    uniqueID: 3924727731
     locked: 0
   - name: Player
     uniqueID: 4141648059
