@@ -82,9 +82,9 @@ public class MainControl : MonoBehaviour
         GameObject.Find("OldTeacher_old").SetActive(false);
         //teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
-        actions.Add(new Action("Player_Eating", KeyCode.E, 3, 3, 1, -0.08f, 0.01f));
+        actions.Add(new Action("Player_Eating", KeyCode.A, 3, 3, 1, -0.08f, 0.01f));
         actions.Add(new Action("Player_Sleeping",KeyCode.S, 3, 2, 2, 0.04f, -0.05f));
-        actions.Add(new Action("Player_Talking",KeyCode.T, 3, 2, 3, 0.07f, 0.08f));
+        actions.Add(new Action("Player_Talking",KeyCode.D, 3, 2, 3, 0.07f, 0.08f));
         level=new Level("OldTeacher", 60, 60, 1f, 10f);
         level.start();
         teacher=level.teacher;
