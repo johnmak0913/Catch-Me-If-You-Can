@@ -116,7 +116,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -128,7 +128,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -145,12 +157,12 @@ TextureImporter:
       name: playertalk_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1
-        width: 304
-        height: 395
+        x: 12
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,12 +178,12 @@ TextureImporter:
       name: playertalk_1
       rect:
         serializedVersion: 2
-        x: 333
-        y: 1
-        width: 306
-        height: 395
+        x: 336
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +199,12 @@ TextureImporter:
       name: playertalk_2
       rect:
         serializedVersion: 2
-        x: 658
-        y: 1
-        width: 303
-        height: 395
+        x: 660
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +220,12 @@ TextureImporter:
       name: playertalk_3
       rect:
         serializedVersion: 2
-        x: 981
-        y: 1
-        width: 306
-        height: 395
+        x: 984
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +241,12 @@ TextureImporter:
       name: playertalk_4
       rect:
         serializedVersion: 2
-        x: 1306
-        y: 1
-        width: 304
-        height: 395
+        x: 1308
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +262,12 @@ TextureImporter:
       name: playertalk_5
       rect:
         serializedVersion: 2
-        x: 1629
-        y: 1
-        width: 305
-        height: 395
+        x: 1632
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +283,12 @@ TextureImporter:
       name: playertalk_6
       rect:
         serializedVersion: 2
-        x: 1954
-        y: 1
-        width: 304
-        height: 395
+        x: 1956
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +304,12 @@ TextureImporter:
       name: playertalk_7
       rect:
         serializedVersion: 2
-        x: 2277
-        y: 1
-        width: 305
-        height: 395
+        x: 2280
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +325,12 @@ TextureImporter:
       name: playertalk_8
       rect:
         serializedVersion: 2
-        x: 2602
-        y: 1
-        width: 304
-        height: 395
+        x: 2604
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,12 +346,12 @@ TextureImporter:
       name: playertalk_9
       rect:
         serializedVersion: 2
-        x: 2925
-        y: 1
-        width: 304
-        height: 395
+        x: 2928
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,12 +367,12 @@ TextureImporter:
       name: playertalk_10
       rect:
         serializedVersion: 2
-        x: 3250
-        y: 1
-        width: 304
-        height: 395
+        x: 3252
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,12 +388,12 @@ TextureImporter:
       name: playertalk_11
       rect:
         serializedVersion: 2
-        x: 3573
-        y: 1
-        width: 304
-        height: 395
+        x: 3576
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,12 +409,12 @@ TextureImporter:
       name: playertalk_12
       rect:
         serializedVersion: 2
-        x: 3898
-        y: 1
-        width: 304
-        height: 395
+        x: 3900
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -418,12 +430,12 @@ TextureImporter:
       name: playertalk_13
       rect:
         serializedVersion: 2
-        x: 4221
-        y: 1
-        width: 304
-        height: 395
+        x: 4224
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,12 +451,12 @@ TextureImporter:
       name: playertalk_14
       rect:
         serializedVersion: 2
-        x: 4547
-        y: 1
-        width: 303
-        height: 395
+        x: 4548
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -460,12 +472,12 @@ TextureImporter:
       name: playertalk_15
       rect:
         serializedVersion: 2
-        x: 4869
-        y: 1
-        width: 304
-        height: 395
+        x: 4872
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,12 +493,12 @@ TextureImporter:
       name: playertalk_16
       rect:
         serializedVersion: 2
-        x: 5193
-        y: 1
-        width: 305
-        height: 395
+        x: 5196
+        y: 4
+        width: 299
+        height: 389
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
