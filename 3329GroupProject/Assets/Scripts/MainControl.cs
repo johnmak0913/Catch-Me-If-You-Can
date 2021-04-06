@@ -101,6 +101,13 @@ public class MainControl : MonoBehaviour
             Debug.Log("Time's up");
             return;
         }*/
+
+        // In MainMenu or PausedMenu, so player actions disabled
+        if (MainMenu.mainMenuOpened || PauseMenu.gameIsPaused)
+        {
+            return;
+        }
+
         foreach(Action action in actions) {
             if(action.check()) {
                 break;
