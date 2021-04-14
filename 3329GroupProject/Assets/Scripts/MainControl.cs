@@ -80,7 +80,7 @@ public class MainControl : MonoBehaviour
     }
 
     void updateUI() {
-        score.text="Scores: "+level.marks.ToString("000");
+        score.text="Score: "+level.marks.ToString("000");
         int min=level.displayTime/60;
         int sec=level.displayTime%60;
         time.text="Time: "+min.ToString("00")+":"+sec.ToString("00");
@@ -115,7 +115,7 @@ public class MainControl : MonoBehaviour
             Debug.Log("Time's up");
             return;
         }
-        // In MainMenu or PausedMenu, so player actions disabled
+        // Opened MainMenu or PausedMenu, so player actions disabled
         if (MainMenu.mainMenuOpened || PauseMenu.gameIsPaused)
         {
             return;
