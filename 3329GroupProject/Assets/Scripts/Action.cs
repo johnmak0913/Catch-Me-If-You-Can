@@ -18,8 +18,11 @@ public class Action : MonoBehaviour {
     DateTime startTime;
     DateTime cdStartTime;
     Transform player;
+    GameObject cdIcon;
+    AudioSource audioSource;
+    AudioClip audioClip;
 
-    public Action(string clip, KeyCode actionKey, float holdFor, float cd, int marks, float xOffest=0f, float yOffset=0f) {
+    public Action(string clip, string audio, string cdIcon, KeyCode actionKey, float holdFor, float cd, int marks, float xOffest=0f, float yOffset=0f) {
         this.clip=clip;
         this.actionKey=actionKey;
         this.holdFor=holdFor;
@@ -27,6 +30,10 @@ public class Action : MonoBehaviour {
         this.marks=marks;
         this.xOffset=xOffest;
         this.yOffset=yOffset;
+        this.cdIcon=GameObject.Find("UI").transform.Find(cdIcon).gameObject;
+        this.cdIcon.SetActive(false);
+        audioSource=GameObject.Find("Player").GetComponent<AudioSource>();
+        audioClip=Resources.Load<AudioClip>("Audio/"+audio);
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
         control=GameObject.Find("MainControl").GetComponent<MainControl>();
         player=GameObject.Find("Player").transform;
@@ -35,6 +42,7 @@ public class Action : MonoBehaviour {
     private void startCooldown() {
         isCooling=true;
         cdStartTime=DateTime.Now;
+        cdIcon.SetActive(true);
     }
 
     private bool teacherTurnedAround() {
@@ -43,9 +51,11 @@ public class Action : MonoBehaviour {
     private void act(string clip="Player_Writing") {
         if(clip!=this.clip) {
             pAnim.act(clip, -xOffset, -yOffset);
+            audioSource.Stop();
         }
         else {
             pAnim.act(clip, xOffset, yOffset);
+            audioSource.PlayOneShot(audioClip);
         }
     }
 
@@ -59,6 +69,7 @@ public class Action : MonoBehaviour {
             if(control.teacherTurnedAround()) {
                 Debug.Log("Get caught: "+actionKey);
                 control.getCaught();
+                audioSource.Stop();
                 startCooldown();
                 startTime=DateTime.Now;
                 finish=true;
@@ -87,6 +98,7 @@ public class Action : MonoBehaviour {
             if((DateTime.Now-cdStartTime).TotalSeconds>=cd) {
                 Debug.Log("Cooled down: "+actionKey);
                 isCooling=false;
+                cdIcon.SetActive(false);
             }
         }
         return acting;

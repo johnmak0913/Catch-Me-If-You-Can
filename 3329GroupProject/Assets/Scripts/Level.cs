@@ -10,12 +10,15 @@ public class Level : MonoBehaviour
     public string teacherName;
     private GameObject teacherObj, teacherPf;
     public float tTurnDelay, tTurnPeriod;
+    public int displayTime;
+    private float counter=0.0f;
     // Start is called before the first frame update
 
     public Level(string teacher, float timeLimit, int lMarks, float tTurnDelay, float tTurnPeriod) {
         teacherName=teacher;
         teacherPf=Resources.Load<GameObject>("Prefabs/"+teacher);
         this.timeLimit=timeLeft=timeLimit;
+        displayTime=(int)timeLimit;
         this.lMarks=lMarks;
         this.tTurnDelay=tTurnDelay;
         this.tTurnPeriod=tTurnPeriod;
@@ -27,8 +30,13 @@ public class Level : MonoBehaviour
     public void end() {
         Destroy(teacherObj);
     }
-    bool updateTimer() {
+    public bool updateTimer() {
         timeLeft-=Time.deltaTime;
-        return timeLeft>=0;
+        counter+=Time.deltaTime;
+        if(counter>=1.0f) {
+            counter--;
+            displayTime--;
+        }
+        return displayTime>=0;
     }
 }

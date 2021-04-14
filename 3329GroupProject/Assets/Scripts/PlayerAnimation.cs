@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
         cAnim=GameObject.Find("ClassmateBR").GetComponent<Animator>();
         original=transform.position;
         cOriginal=GameObject.Find("ClassmateBR").transform.position;
-        cOffset=new Vector3(0.11f, 0.24f, 0);
+        cOffset=new Vector3(0.06f, 0.23f, 0);
     }
     public void act(string clip="Player_Writing", float xOffset=0f, float yOffset=0f) {
         animator.Play(clip);
@@ -25,10 +25,10 @@ public class PlayerAnimation : MonoBehaviour
             classmateBR.position=cOriginal;
         }
         else {
-            transform.position+=new Vector3(xOffset, yOffset, 0);
+            transform.position=original+new Vector3(xOffset, yOffset, 0);
             if(clip=="Player_Talking") {
                 cAnim.Play("ClassmateBR_Talking");
-                classmateBR.position+=cOffset;
+                classmateBR.position=cOriginal+cOffset;
             }
         }
     }
