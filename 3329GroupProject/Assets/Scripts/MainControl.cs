@@ -92,11 +92,15 @@ public class MainControl : MonoBehaviour
         GameObject.Find("OldTeacher_old").SetActive(false);
         //teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
-        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 3, 3, 1, -0.08f, 0.01f));
-        actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 2, 2, 0.04f, -0.05f));
-        actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 3, 2, 3, 0.07f, 0.08f));
-        levels=new Level[] {
-            new Level("MaleTeacher", 120, 60, 1f, 10f),
+        
+        // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
+        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2, 2, 10, -0.08f, 0.01f));
+        actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 3, 20, 0.04f, -0.05f));
+        actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 4, 30, 0.07f, 0.08f));
+        
+        // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
+        levels = new Level[] {
+            new Level("MaleTeacher", 30, 60, 1f, 10f),  // Changed to 30s for testing
             new Level("FemaleTeacher", 120, 60, 1f, 10f),
             new Level("OldTeacher", 120, 60, 1f, 10f)
         };
