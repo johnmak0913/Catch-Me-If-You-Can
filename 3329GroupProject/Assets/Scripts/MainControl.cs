@@ -17,10 +17,17 @@ public class MainControl : MonoBehaviour
     public TMP_Text score, time;
     public GameOverScreen gameOverScreen;
     private bool waitGameOver=false;
+    public LevelCompletedScreen levelCompletedScreen;
 
     public void gameOver()
     {
         gameOverScreen.setUp(level.marks);
+    }
+
+    public void levelCompleted()
+    {
+        // levelCompletedScreen = GetComponent<LevelCompletedScreen>();
+        levelCompletedScreen.setUp(level.marks);  // NullReferenceException: Object reference not set to an instance of an object
     }
 
     void teacherTurnAround() {
@@ -97,9 +104,9 @@ public class MainControl : MonoBehaviour
     void Start()
     {
         GameObject.Find("OldTeacher_old").SetActive(false);
-        //teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
+        // teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
-        
+
         // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
         actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 1.5f, 2, 10, -0.08f, 0.01f));
         actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 3, 20, 0.04f, -0.05f));
@@ -107,9 +114,9 @@ public class MainControl : MonoBehaviour
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 30, 60, 1f, 10f),
-            new Level("FemaleTeacher", 40, 60, 1f, 10f),
-            new Level("OldTeacher", 60, 60, 1f, 10f)
+            new Level("MaleTeacher", 10, 20, 1f, 10f),
+            new Level("FemaleTeacher", 40, 100, 1f, 10f),
+            new Level("OldTeacher", 60, 150, 1f, 10f)
         };
         level=levels[0];
         level.start();
@@ -123,19 +130,22 @@ public class MainControl : MonoBehaviour
             return;
         }
         // Disable player actions under these conditions
-        if (MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver) {
+        if(MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver || LevelCompletedScreen.levelIsCompleted) {
             return;
         }
-        if (caught) {
+        if(caught) {
             Invoke("gameOver", 2f);  // Wait for 2s then invoke game over screen
             waitGameOver = true;
             caught = false;
             return;
         }
         if(!level.updateTimer()) {
-            // if level.marks < target score
             Time.timeScale = 0f;
-            gameOver();
+            if (level.marks >= level.lMarks) {
+                // levelCompleted();  // Error on line 31
+            } else {
+                gameOver();
+            }
             return;
         }
 

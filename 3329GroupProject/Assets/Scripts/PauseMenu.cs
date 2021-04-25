@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameIsPaused || GameOverScreen.gameIsOver)
+        if (gameIsPaused || GameOverScreen.gameIsOver || LevelCompletedScreen.levelIsCompleted)
         {
             return;
         }

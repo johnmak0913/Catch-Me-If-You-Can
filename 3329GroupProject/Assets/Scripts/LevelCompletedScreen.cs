@@ -5,27 +5,22 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class GameOverScreen : MonoBehaviour
+public class LevelCompletedScreen : MonoBehaviour
 {
     public TMP_Text scoreText;
-    public static bool gameIsOver = false;
+    public static bool levelIsCompleted = false;
 
     public void setUp(int score)
     {
         gameObject.SetActive(true);
         scoreText.text = "Score: " + score.ToString();
-        gameIsOver = true;
+        levelIsCompleted = true;
     }
 
-    public void restartButton()
+    public void nextLevelButton()
     {
-        SceneManager.LoadScene("Game");
-        gameIsOver = false;
-    }
-
-    public void exitButton()
-    {
-        SceneManager.LoadScene("MainMenu");
-        gameIsOver = false;
+        // SceneManager.LoadScene("Game");
+        // *Go to next level
+        levelIsCompleted = false;
     }
 }
