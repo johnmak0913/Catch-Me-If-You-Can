@@ -26,6 +26,7 @@ public class Level : MonoBehaviour
     public void start() {
         teacherObj=Instantiate(teacherPf, new Vector3(4.91f, 1.06f, 0f), Quaternion.identity);
         this.teacher=teacherObj.GetComponent<TeacherMovement>();
+        Time.timeScale = 1f;  // For restarting game
     }
     public void end() {
         Destroy(teacherObj);

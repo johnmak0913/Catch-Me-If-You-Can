@@ -15,6 +15,13 @@ public class MainControl : MonoBehaviour
     public Level[] levels;
     public Level level;
     public TMP_Text score, time;
+    public GameOverScreen gameOverScreen;
+    private bool waitGameOver=false;
+
+    public void gameOver()
+    {
+        gameOverScreen.setUp(level.marks);
+    }
 
     void teacherTurnAround() {
         teacher.preTurnAround=true;
@@ -51,8 +58,8 @@ public class MainControl : MonoBehaviour
         else if(teacherTurnedAround()) {
             if(caught) {
                 tBackTimeLeft=2f;
-                caught=false;
-                playerResume=true;
+                caught=false;  // ***
+                playerResume=true;  // ***
                 return;
             }
             if(!tBackWaiting) {
@@ -80,7 +87,7 @@ public class MainControl : MonoBehaviour
     }
 
     void updateUI() {
-        score.text="Score: "+level.marks.ToString("000");
+        score.text="Score: "+level.marks.ToString();
         int min=level.displayTime/60;
         int sec=level.displayTime%60;
         time.text="Time: "+min.ToString("00")+":"+sec.ToString("00");
@@ -100,9 +107,9 @@ public class MainControl : MonoBehaviour
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 30, 60, 1f, 10f),  // Changed to 30s for testing
-            new Level("FemaleTeacher", 120, 60, 1f, 10f),
-            new Level("OldTeacher", 120, 60, 1f, 10f)
+            new Level("MaleTeacher", 10, 60, 1f, 10f),
+            new Level("FemaleTeacher", 40, 60, 1f, 10f),
+            new Level("OldTeacher", 60, 60, 1f, 10f)
         };
         level=levels[0];
         level.start();
@@ -115,15 +122,23 @@ public class MainControl : MonoBehaviour
         if(teacher==null) {
             return;
         }
+        // Disable player actions under these conditions
+        if (MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver) {
+            return;
+        }
+        if (caught) {
+            Invoke("gameOver", 2f);  // Wait for 2s then invoke game over screen
+            waitGameOver = true;
+            caught = false;
+            return;
+        }
         if(!level.updateTimer()) {
-            Debug.Log("Time's up");
+            // Debug.Log("Time's up");
+            Time.timeScale = 0f;
+            gameOver();
             return;
         }
-        // Opened MainMenu or PausedMenu, so player actions disabled
-        if (MainMenu.mainMenuOpened || PauseMenu.gameIsPaused)
-        {
-            return;
-        }
+
         updateUI();
         teacherRandomlyTurnAround();
         foreach(Action action in actions) {
