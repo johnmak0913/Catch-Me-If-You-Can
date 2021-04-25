@@ -87,10 +87,10 @@ public class MainControl : MonoBehaviour
     }
 
     void updateUI() {
-        score.text="Score: "+level.marks.ToString();
+        score.text="Score "+level.marks.ToString();
         int min=level.displayTime/60;
         int sec=level.displayTime%60;
-        time.text="Time: "+min.ToString("00")+":"+sec.ToString("00");
+        time.text="Time "+min.ToString("00")+":"+sec.ToString("00");
     }
 
     // Start is called before the first frame update
