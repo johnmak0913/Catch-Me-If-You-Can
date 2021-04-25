@@ -28,7 +28,7 @@ public class Action : MonoBehaviour {
         this.marks=marks;
         this.xOffset=xOffest;
         this.yOffset=yOffset;
-        this.cdIcon=GameObject.Find("UI").transform.Find(cdIcon).gameObject;
+        this.cdIcon=GameObject.Find("UI").transform.Find(cdIcon).gameObject;  // NullReferenceException??
         this.cdIcon.SetActive(false);
         audioSource=GameObject.Find("Player").GetComponent<AudioSource>();
         audioClip=Resources.Load<AudioClip>("Audio/"+audio);

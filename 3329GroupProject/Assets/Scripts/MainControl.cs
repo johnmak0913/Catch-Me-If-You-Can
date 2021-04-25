@@ -45,7 +45,7 @@ public class MainControl : MonoBehaviour
             if(!tTurnWaiting) {
                 tTurnWaiting=true;
                 tBackWaiting=false;
-                tTurnTimeLeft=UnityEngine.Random.Range(7.0f, level.tTurnPeriod);
+                tTurnTimeLeft=UnityEngine.Random.Range(5.0f, level.tTurnPeriod);  // Adjust turn frequency
                 return;
             }
             if(tTurnTimeLeft<=0) {
@@ -101,13 +101,13 @@ public class MainControl : MonoBehaviour
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
         
         // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
-        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2, 2, 10, -0.08f, 0.01f));
+        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 1.5f, 2, 10, -0.08f, 0.01f));
         actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 3, 20, 0.04f, -0.05f));
         actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 4, 30, 0.07f, 0.08f));
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 10, 60, 1f, 10f),
+            new Level("MaleTeacher", 30, 60, 1f, 10f),
             new Level("FemaleTeacher", 40, 60, 1f, 10f),
             new Level("OldTeacher", 60, 60, 1f, 10f)
         };
@@ -133,7 +133,7 @@ public class MainControl : MonoBehaviour
             return;
         }
         if(!level.updateTimer()) {
-            // Debug.Log("Time's up");
+            // if level.marks < target score
             Time.timeScale = 0f;
             gameOver();
             return;
