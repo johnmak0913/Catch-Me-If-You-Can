@@ -127,15 +127,15 @@ public class MainControl : MonoBehaviour
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
 
         // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
-        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 1.5f, 2, 10, -0.08f, 0.01f));
-        actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 3, 20, 0.04f, -0.05f));
-        actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 4, 30, 0.07f, 0.08f));
+        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2, 1, 10, -0.08f, 0.01f));
+        actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 2, 20, 0.04f, -0.05f));
+        actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 3, 30, 0.07f, 0.08f));
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 10, 20, 1f, 10f),
-            new Level("FemaleTeacher", 40, 100, 1f, 10f),
-            new Level("OldTeacher", 60, 150, 1f, 10f)
+            new Level("MaleTeacher", 30, 80, 1f, 10f),
+            new Level("FemaleTeacher", 40, 200, 0.5f, 10f),
+            new Level("OldTeacher", 60, 300, 0.3f, 10f)
         };
         prepareNextLevel();
         level.start();
