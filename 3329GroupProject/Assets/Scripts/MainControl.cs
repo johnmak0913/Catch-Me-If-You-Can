@@ -35,6 +35,7 @@ public class MainControl : MonoBehaviour
         level=levels[++currentLevel];
         level.prepareTeacher();
         teacher=level.teacher;
+        //teacher.ready();
     }
     public void gameOver()
     {
@@ -62,6 +63,9 @@ public class MainControl : MonoBehaviour
         return teacher.animator.GetBool("turnAround");
     }
     public bool teacherIsWalking() {
+        if(teacher.animator==null) {
+            return true;
+        }
         return teacher.animator.GetCurrentAnimatorStateInfo(0).IsName(level.teacherName+"_Walk");
     }
     void teacherRandomlyTurnAround() {
