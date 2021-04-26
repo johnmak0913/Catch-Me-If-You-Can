@@ -15,11 +15,11 @@ public class GameOverScreen : MonoBehaviour
         gameObject.SetActive(true);
         if (MainControl.caught)
         {
-            scoreText.text = "You Got Caught!!\nDetention After Class!!";  // "Score: " + score.ToString();
+            scoreText.text = "You Got Caught!!\nDetention After Class \\( ´0´)/";  // "Score: " + score.ToString();
         }
         else
         {
-            scoreText.text = "Times Up!!\nNot Enough Points!!";
+            scoreText.text = "Times Up!!\nNot Enough Points... ( TaT)";
         }
             
         gameIsOver = true;

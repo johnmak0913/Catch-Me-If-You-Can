@@ -136,11 +136,12 @@ public class MainControl : MonoBehaviour
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 60, 150, 1f, 10f),
+            new Level("MaleTeacher", 5, 10, 1f, 10f),
             new Level("FemaleTeacher", 40, 250, 0.5f, 8f),
             new Level("OldTeacher", 30, 350, 0.4f, 6f)
         };
         prepareNextLevel();
+        caught = false;
         level.start();
     }
 

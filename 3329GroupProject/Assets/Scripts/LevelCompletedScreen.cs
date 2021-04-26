@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,7 +18,7 @@ public class LevelCompletedScreen : MonoBehaviour
     public void setUp(int score)
     {
         gameObject.SetActive(true);
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = "Seems Like You're Good At\nBeing A Bad Student ( ͡° ͜ʖ ͡°)";
         levelIsCompleted = true;
     }
 
