@@ -10,7 +10,7 @@ public class GameOverScreen : MonoBehaviour
     public TMP_Text scoreText;
     public static bool gameIsOver = false;
 
-    public void setUp(int score)
+    public void setUp(int score)  // score not used yet
     {
         gameObject.SetActive(true);
         if (MainControl.caught)

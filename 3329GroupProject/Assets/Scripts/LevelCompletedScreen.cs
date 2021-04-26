@@ -15,7 +15,7 @@ public class LevelCompletedScreen : MonoBehaviour
         control=GameObject.Find("MainControl").GetComponent<MainControl>();
     }
 
-    public void setUp(int score)
+    public void setUp(int score)  // score not used yet
     {
         gameObject.SetActive(true);
         scoreText.text = "Seems Like You're Good At\nBeing A Bad Student ( ͡° ͜ʖ ͡°)";

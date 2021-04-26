@@ -21,6 +21,7 @@ public class MainControl : MonoBehaviour
     public GameOverScreen gameOverScreen;
     private bool waitGameOver=false;
     public LevelCompletedScreen levelCompletedScreen;
+    public GameCompletedScreen gameCompletedScreen;
 
     public void prepareNextLevel() {
         if(currentLevel>=2) {
@@ -45,8 +46,12 @@ public class MainControl : MonoBehaviour
 
     public void levelCompleted()
     {
-        // levelCompletedScreen = GetComponent<LevelCompletedScreen>();
-        levelCompletedScreen.setUp(level.marks);  // NullReferenceException: Object reference not set to an instance of an object
+        levelCompletedScreen.setUp(level.marks);
+    }
+
+    public void gameCompleted()
+    {
+        gameCompletedScreen.setUp(level.marks);  // NullReferenceException!!
     }
 
     void teacherTurnAround() {
@@ -136,7 +141,7 @@ public class MainControl : MonoBehaviour
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 5, 10, 1f, 10f),
+            new Level("MaleTeacher", 60, 150, 1f, 10f),
             new Level("FemaleTeacher", 40, 250, 0.5f, 8f),
             new Level("OldTeacher", 30, 350, 0.4f, 6f)
         };
@@ -149,25 +154,29 @@ public class MainControl : MonoBehaviour
     void Update()
     {   
         // Disable player actions under these conditions
-        if(MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver || LevelCompletedScreen.levelIsCompleted || !level.started) {
+        if(MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver 
+            || LevelCompletedScreen.levelIsCompleted || !level.started || GameCompletedScreen.gameIsCompleted) {
             return;
         }
         if(caught) {
-            Invoke("gameOver", 4f);  // Wait for 3.5s(caught audio) then invoke game over screen
+            Invoke("gameOver", 4f);  // Wait for 4s(caught audio) then invoke game over screen
             waitGameOver = true;
             //caught = false;
             return;
         }
         if(!level.updateTimer()) {
             Time.timeScale = 0f;
-            if (level.marks >= level.lMarks && currentLevel<2) {
-                levelCompleted();
+            if (level.marks >= level.lMarks) {
+                if (currentLevel < 2) {
+                    levelCompleted();
+                } else {  // Final level
+                    gameCompleted();
+                }
             } else {
                 gameOver();
             }
             return;
         }
-
         updateUI();
         teacherRandomlyTurnAround();
         foreach(Action action in actions) {
