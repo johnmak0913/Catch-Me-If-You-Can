@@ -149,7 +149,7 @@ public class MainControl : MonoBehaviour
             return;
         }
         if(caught) {
-            Invoke("gameOver", 2f);  // Wait for 2s then invoke game over screen
+            Invoke("gameOver", 4f);  // Wait for 3.5s(caught audio) then invoke game over screen
             waitGameOver = true;
             caught = false;
             return;

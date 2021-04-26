@@ -17,8 +17,8 @@ public class Action : MonoBehaviour {
     bool acting=false;
     Transform player;
     GameObject cdIcon;
-    AudioSource audioSource;
-    AudioClip audioClip;
+    AudioSource audioSource, caughtSource;
+    AudioClip audioClip, caughtClip;
 
     public Action(string clip, string audio, string cdIcon, KeyCode actionKey, float holdFor, float cd, int marks, float xOffest=0f, float yOffset=0f) {
         this.clip=clip;
@@ -32,7 +32,9 @@ public class Action : MonoBehaviour {
         this.cdIcon.SetActive(false);
         audioSource=GameObject.Find("Player").GetComponent<AudioSource>();
         audioClip=Resources.Load<AudioClip>("Audio/"+audio);
-        pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
+        caughtSource=GameObject.Find("TeacherTable").GetComponent<AudioSource>();
+        caughtClip =Resources.Load<AudioClip>("Audio/Caught");
+        pAnim =GameObject.Find("Player").GetComponent<PlayerAnimation>();
         control=GameObject.Find("MainControl").GetComponent<MainControl>();
         player=GameObject.Find("Player").transform;
     }
@@ -78,6 +80,7 @@ public class Action : MonoBehaviour {
             heldTime+=Time.deltaTime;
             if(control.teacherTurnedAround()) {
                 Debug.Log("Get caught: "+actionKey);
+                caughtSource.PlayOneShot(caughtClip);  // Caught audio played
                 control.getCaught();
                 audioSource.Stop();
                 startCooldown();
