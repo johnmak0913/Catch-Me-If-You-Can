@@ -11,7 +11,8 @@ public class MainControl : MonoBehaviour
     private bool tTurnWaiting=false, tBackWaiting=false;
     public TeacherMovement teacher;
     PlayerAnimation pAnim;
-    private bool caught=false, playerResume=false;
+    private bool playerResume=false;
+    public static bool caught=false;
     public int playerActing=0;
     public Level[] levels;
     public Level level;
@@ -84,12 +85,14 @@ public class MainControl : MonoBehaviour
             }
         }
         else if(teacherTurnedAround()) {
+            /*
             if(caught) {
                 tBackTimeLeft=2f;
                 caught=false;  // ***
                 playerResume=true;  // ***
                 return;
             }
+            */
             if(!tBackWaiting) {
                 tBackWaiting=true;
                 //tBackTimeLeft=UnityEngine.Random.Range(3.0f, 5.0f);
@@ -151,7 +154,7 @@ public class MainControl : MonoBehaviour
         if(caught) {
             Invoke("gameOver", 4f);  // Wait for 3.5s(caught audio) then invoke game over screen
             waitGameOver = true;
-            caught = false;
+            //caught = false;
             return;
         }
         if(!level.updateTimer()) {

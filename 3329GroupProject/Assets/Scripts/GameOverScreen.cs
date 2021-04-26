@@ -13,7 +13,15 @@ public class GameOverScreen : MonoBehaviour
     public void setUp(int score)
     {
         gameObject.SetActive(true);
-        scoreText.text = "Score: " + score.ToString();
+        if (MainControl.caught)
+        {
+            scoreText.text = "You Got Caught!!\nDetention After Class!!";  // "Score: " + score.ToString();
+        }
+        else
+        {
+            scoreText.text = "Times Up!!\nNot Enough Points!!";
+        }
+            
         gameIsOver = true;
     }
 
