@@ -32,12 +32,12 @@ public class MainControl : MonoBehaviour
         }
         tTurnWaiting=tBackWaiting=false;
         foreach(Action action in actions) {
+            action.resetAction();
             action.resetCooldown();
         }
         level=levels[++currentLevel];
         level.prepareTeacher();
         teacher=level.teacher;
-        //teacher.ready();
     }
     public void gameOver()
     {

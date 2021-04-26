@@ -48,6 +48,10 @@ public class Action : MonoBehaviour {
         isCooling=false;
         cdIcon.SetActive(false);
     }
+    public void resetAction() {
+        acting=false;
+        act();
+    }
 
     private bool teacherTurnedAround() {
         return control.teacherTurnedAround();
