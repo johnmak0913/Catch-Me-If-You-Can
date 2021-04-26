@@ -1050,7 +1050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 675, y: 80}
+  m_AnchoredPosition: {x: 675, y: 95}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &397453214
@@ -2245,7 +2245,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 864019369}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2011982006}
+        m_TargetAssemblyTypeName: LevelCompletedScreen, Assembly-CSharp
+        m_MethodName: nextLevelButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &864019369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3843,12 +3855,13 @@ MonoBehaviour:
   tTurnTimeLeft: -10
   tBackTimeLeft: -10
   teacher: {fileID: 0}
+  playerActing: 0
   levels: []
   level: {fileID: 0}
   score: {fileID: 397453214}
   time: {fileID: 1097308028}
   gameOverScreen: {fileID: 42574271}
-  levelCompletedScreen: {fileID: 0}
+  levelCompletedScreen: {fileID: 2011982006}
 --- !u!4 &1701150801
 Transform:
   m_ObjectHideFlags: 0
@@ -3861,7 +3874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745038649
 GameObject:
@@ -5754,9 +5767,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldTeacher_old
       objectReference: {fileID: 0}
+    - target: {fileID: 4443162128709004073, guid: ff1518108c6386f4899f90769f7d5af9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443162128709004078, guid: ff1518108c6386f4899f90769f7d5af9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4443162128709004078, guid: ff1518108c6386f4899f90769f7d5af9, type: 3}
       propertyPath: m_LocalPosition.x

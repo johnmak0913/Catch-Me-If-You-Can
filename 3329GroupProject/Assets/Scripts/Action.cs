@@ -42,6 +42,10 @@ public class Action : MonoBehaviour {
         isCooling=true;
         cdIcon.SetActive(true);
     }
+    public void resetCooldown() {
+        isCooling=false;
+        cdIcon.SetActive(false);
+    }
 
     private bool teacherTurnedAround() {
         return control.teacherTurnedAround();
@@ -62,9 +66,13 @@ public class Action : MonoBehaviour {
             cdLeft-=Time.deltaTime;
         }
         if(Input.GetKey(actionKey) && !isCooling) {
+            if(control.playerActing!=0 && control.playerActing!=(int)actionKey) {
+                return false;
+            }
             finish=false;
             if(!acting) {
                 act(clip);
+                control.playerActing=(int)actionKey;
             }
             acting=true;
             heldTime+=Time.deltaTime;
@@ -74,6 +82,7 @@ public class Action : MonoBehaviour {
                 audioSource.Stop();
                 startCooldown();
                 heldTime=0;
+                control.playerActing=0;
                 finish=true;
             }
             else if(heldTime>=holdFor) {
@@ -83,6 +92,7 @@ public class Action : MonoBehaviour {
                 Debug.Log("Marks: "+control.level.marks);
                 startCooldown();
                 heldTime=0;
+                control.playerActing=0;
                 finish=true;
             }
         }
@@ -93,6 +103,7 @@ public class Action : MonoBehaviour {
                 act();
                 Debug.Log("Action unfinshed: "+actionKey);
                 startCooldown();
+                control.playerActing=0;
                 finish=true;
             }
         }

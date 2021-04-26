@@ -881,6 +881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldTeacher_old
       objectReference: {fileID: 0}
+    - target: {fileID: 4443162128709004077, guid: ff1518108c6386f4899f90769f7d5af9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443162128709004078, guid: ff1518108c6386f4899f90769f7d5af9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2867,12 +2871,14 @@ MonoBehaviour:
   tTurnTimeLeft: -10
   tBackTimeLeft: -10
   teacher: {fileID: 0}
+  playerActing: 0
   levels:
   - {fileID: 0}
   level: {fileID: 0}
   score: {fileID: 0}
   time: {fileID: 0}
   gameOverScreen: {fileID: 0}
+  levelCompletedScreen: {fileID: 0}
 --- !u!4 &1213165006
 Transform:
   m_ObjectHideFlags: 0
@@ -2913,7 +2919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338720536}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1881c092a1f66546bf24f04f09b8065, type: 3}
   m_Name: 

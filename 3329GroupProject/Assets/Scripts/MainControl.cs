@@ -12,13 +12,30 @@ public class MainControl : MonoBehaviour
     public TeacherMovement teacher;
     PlayerAnimation pAnim;
     private bool caught=false, playerResume=false;
+    public int playerActing=0;
     public Level[] levels;
     public Level level;
+    private int currentLevel=-1;
     public TMP_Text score, time;
     public GameOverScreen gameOverScreen;
     private bool waitGameOver=false;
     public LevelCompletedScreen levelCompletedScreen;
 
+    public void prepareNextLevel() {
+        if(currentLevel>=2) {
+            return;
+        }
+        if(currentLevel!=-1) {
+            levels[currentLevel+1].marks=level.marks;
+        }
+        tTurnWaiting=tBackWaiting=false;
+        foreach(Action action in actions) {
+            action.resetCooldown();
+        }
+        level=levels[++currentLevel];
+        level.prepareTeacher();
+        teacher=level.teacher;
+    }
     public void gameOver()
     {
         gameOverScreen.setUp(level.marks);
@@ -103,8 +120,6 @@ public class MainControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("OldTeacher_old").SetActive(false);
-        // teacher=GameObject.Find("OldTeacher").GetComponent<TeacherMovement>();
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
 
         // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
@@ -118,19 +133,15 @@ public class MainControl : MonoBehaviour
             new Level("FemaleTeacher", 40, 100, 1f, 10f),
             new Level("OldTeacher", 60, 150, 1f, 10f)
         };
-        level=levels[0];
+        prepareNextLevel();
         level.start();
-        teacher=level.teacher;
     }
 
     // Update is called once per frame
     void Update()
     {   
-        if(teacher==null) {
-            return;
-        }
         // Disable player actions under these conditions
-        if(MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver || LevelCompletedScreen.levelIsCompleted) {
+        if(MainMenu.mainMenuOpened || PauseMenu.gameIsPaused || waitGameOver || LevelCompletedScreen.levelIsCompleted || !level.started) {
             return;
         }
         if(caught) {
@@ -141,8 +152,8 @@ public class MainControl : MonoBehaviour
         }
         if(!level.updateTimer()) {
             Time.timeScale = 0f;
-            if (level.marks >= level.lMarks) {
-                // levelCompleted();  // Error on line 31
+            if (level.marks >= level.lMarks && currentLevel<2) {
+                levelCompleted();
             } else {
                 gameOver();
             }

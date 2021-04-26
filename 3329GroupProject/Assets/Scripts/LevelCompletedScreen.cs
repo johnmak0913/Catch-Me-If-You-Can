@@ -9,6 +9,11 @@ public class LevelCompletedScreen : MonoBehaviour
 {
     public TMP_Text scoreText;
     public static bool levelIsCompleted = false;
+    private MainControl control;
+
+    void Start() {
+        control=GameObject.Find("MainControl").GetComponent<MainControl>();
+    }
 
     public void setUp(int score)
     {
@@ -19,8 +24,10 @@ public class LevelCompletedScreen : MonoBehaviour
 
     public void nextLevelButton()
     {
-        // SceneManager.LoadScene("Game");
-        // *Go to next level
+        control.level.removeTeacher();
+        control.prepareNextLevel();
+        gameObject.SetActive(false);
         levelIsCompleted = false;
+        control.level.start();
     }
 }

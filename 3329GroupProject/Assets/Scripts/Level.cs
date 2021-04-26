@@ -12,8 +12,7 @@ public class Level : MonoBehaviour
     public float tTurnDelay, tTurnPeriod;
     public int displayTime;
     private float counter=0.0f;
-    // Start is called before the first frame update
-
+    public bool started=false;
     public Level(string teacher, float timeLimit, int lMarks, float tTurnDelay, float tTurnPeriod) {
         teacherName=teacher;
         teacherPf=Resources.Load<GameObject>("Prefabs/"+teacher);
@@ -23,12 +22,15 @@ public class Level : MonoBehaviour
         this.tTurnDelay=tTurnDelay;
         this.tTurnPeriod=tTurnPeriod;
     }
-    public void start() {
+    public void prepareTeacher() {
         teacherObj=Instantiate(teacherPf, new Vector3(4.91f, 1.06f, 0f), Quaternion.identity);
         this.teacher=teacherObj.GetComponent<TeacherMovement>();
-        Time.timeScale = 1f;  // For restarting game
     }
-    public void end() {
+    public void start() {
+        Time.timeScale = 1f;  // For restarting game
+        started=true;
+    }
+    public void removeTeacher() {
         Destroy(teacherObj);
     }
     public bool updateTimer() {
