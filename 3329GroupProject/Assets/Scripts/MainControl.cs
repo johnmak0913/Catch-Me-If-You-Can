@@ -73,7 +73,7 @@ public class MainControl : MonoBehaviour
             if(!tTurnWaiting) {
                 tTurnWaiting=true;
                 tBackWaiting=false;
-                tTurnTimeLeft=UnityEngine.Random.Range(5.0f, level.tTurnPeriod);  // Adjust turn frequency
+                tTurnTimeLeft=UnityEngine.Random.Range(3.0f, level.tTurnPeriod);  // Adjust turn frequency
                 return;
             }
             if(tTurnTimeLeft<=0) {
@@ -133,9 +133,9 @@ public class MainControl : MonoBehaviour
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 30, 80, 1f, 10f),
-            new Level("FemaleTeacher", 40, 200, 0.5f, 10f),
-            new Level("OldTeacher", 60, 300, 0.3f, 10f)
+            new Level("MaleTeacher", 60, 150, 1f, 10f),
+            new Level("FemaleTeacher", 40, 250, 0.5f, 8f),
+            new Level("OldTeacher", 30, 350, 0.4f, 6f)
         };
         prepareNextLevel();
         level.start();
