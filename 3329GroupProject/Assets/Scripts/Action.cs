@@ -15,6 +15,7 @@ public class Action : MonoBehaviour {
     bool isCooling=false;
     bool finish=true;
     bool acting=false;
+    bool preventHolding=true;
     Transform player;
     GameObject cdIcon;
     AudioSource audioSource, caughtSource;
@@ -49,7 +50,11 @@ public class Action : MonoBehaviour {
         cdIcon.SetActive(false);
     }
     public void resetAction() {
+        preventHolding=true;
+        heldTime=0;
+        finish=true;
         acting=false;
+        control.playerActing=0;
         act();
     }
 
@@ -71,7 +76,7 @@ public class Action : MonoBehaviour {
         if(isCooling) {
             cdLeft-=Time.deltaTime;
         }
-        if(Input.GetKey(actionKey) && !isCooling) {
+        if(Input.GetKey(actionKey) && !isCooling && !preventHolding) {
             if(control.playerActing!=0 && control.playerActing!=(int)actionKey) {
                 return false;
             }
@@ -121,6 +126,7 @@ public class Action : MonoBehaviour {
                 cdIcon.SetActive(false);
             }
         }
+        preventHolding=false;
         return acting;
     }
 }
