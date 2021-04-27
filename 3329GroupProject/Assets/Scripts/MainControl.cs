@@ -18,10 +18,13 @@ public class MainControl : MonoBehaviour
     public Level level;
     private int currentLevel=-1;
     public TMP_Text score, time;
+    public TextMeshProUGUI plusScore;
     public GameOverScreen gameOverScreen;
     private bool waitGameOver=false;
     public LevelCompletedScreen levelCompletedScreen;
     public GameCompletedScreen gameCompletedScreen;
+    AudioSource audioSource;
+    AudioClip audioClip;
 
     public void prepareNextLevel() {
         if(currentLevel>=2) {
@@ -51,7 +54,7 @@ public class MainControl : MonoBehaviour
 
     public void gameCompleted()
     {
-        gameCompletedScreen.setUp(level.marks);  // NullReferenceException!!
+        gameCompletedScreen.setUp(level.marks);
     }
 
     void teacherTurnAround() {
@@ -79,7 +82,7 @@ public class MainControl : MonoBehaviour
             if(!tTurnWaiting) {
                 tTurnWaiting=true;
                 tBackWaiting=false;
-                tTurnTimeLeft=UnityEngine.Random.Range(3.0f, level.tTurnPeriod);  // Adjust turn frequency
+                tTurnTimeLeft=UnityEngine.Random.Range(2.5f, level.tTurnPeriod);  // Adjust turn frequency
                 return;
             }
             if(tTurnTimeLeft<=0) {
@@ -122,6 +125,26 @@ public class MainControl : MonoBehaviour
         teacher.animator.SetBool("caught", true);
     }
 
+    public void plusScoreUI(int score)
+    {
+        Debug.Log("Score +" + score.ToString());
+        plusScore.enabled = true;
+        plusScore.gameObject.SetActive(true);
+        plusScore.text = "+" + score.ToString();
+        audioSource = GameObject.Find("Player").GetComponent<AudioSource>();
+        audioClip = Resources.Load<AudioClip>("Audio/Scoring");
+        audioSource.PlayOneShot(audioClip);
+        StartCoroutine("WaitForSec");
+    }
+
+    IEnumerator WaitForSec()
+    {
+        yield return new WaitForSeconds(0.8f);
+        plusScore.text = "";
+        plusScore.enabled = false;
+        plusScore.gameObject.SetActive(false);
+    }
+
     void updateUI() {
         score.text="Score "+level.marks.ToString();
         int min=level.displayTime/60;
@@ -133,6 +156,8 @@ public class MainControl : MonoBehaviour
     void Start()
     {
         pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
+        plusScore.enabled = false;
+        plusScore.gameObject.SetActive(false);
 
         // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
         actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2, 1, 10, -0.08f, 0.01f));
@@ -141,9 +166,9 @@ public class MainControl : MonoBehaviour
         
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
         levels = new Level[] {
-            new Level("MaleTeacher", 60, 150, 1f, 10f),
-            new Level("FemaleTeacher", 40, 250, 0.5f, 8f),
-            new Level("OldTeacher", 30, 350, 0.4f, 6f)
+            new Level("MaleTeacher", 60, 200, 0.8f, 9f),
+            new Level("FemaleTeacher", 40, 300, 0.5f, 7f),
+            new Level("OldTeacher", 30, 400, 0.4f, 5f)
         };
         prepareNextLevel();
         caught = false;
@@ -161,7 +186,6 @@ public class MainControl : MonoBehaviour
         if(caught) {
             Invoke("gameOver", 4f);  // Wait for 4s(caught audio) then invoke game over screen
             waitGameOver = true;
-            //caught = false;
             return;
         }
         if(!level.updateTimer()) {

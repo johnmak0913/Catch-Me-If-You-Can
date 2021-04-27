@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+// using UnityEngine.UI;
+// using TMPro;
 
 public class Action : MonoBehaviour {
     MainControl control;
@@ -29,7 +31,7 @@ public class Action : MonoBehaviour {
         this.marks=marks;
         this.xOffset=xOffest;
         this.yOffset=yOffset;
-        this.cdIcon=GameObject.Find("UI").transform.Find(cdIcon).gameObject;  // NullReferenceException??
+        this.cdIcon=GameObject.Find("UI").transform.Find(cdIcon).gameObject;
         this.cdIcon.SetActive(false);
         audioSource=GameObject.Find("Player").GetComponent<AudioSource>();
         audioClip=Resources.Load<AudioClip>("Audio/"+audio);
@@ -100,6 +102,7 @@ public class Action : MonoBehaviour {
             else if(heldTime>=holdFor) {
                 act();
                 Debug.Log("Action finished: "+actionKey);
+                control.plusScoreUI(marks);
                 control.level.marks+=marks;
                 Debug.Log("Marks: "+control.level.marks);
                 startCooldown();
