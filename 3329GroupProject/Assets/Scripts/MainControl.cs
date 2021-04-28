@@ -25,6 +25,9 @@ public class MainControl : MonoBehaviour
     public GameCompletedScreen gameCompletedScreen;
     AudioSource audioSource;
     AudioClip audioClip;
+    private string rank = "";
+    public static string[] rank_name = {"Notorious", "Troublesome", "Disobedient", "Naughty"};
+    public static int[] rank_score = {1000, 800, 600, 400};
 
     public void prepareNextLevel() {
         if(currentLevel>=2) {
@@ -54,7 +57,7 @@ public class MainControl : MonoBehaviour
 
     public void gameCompleted()
     {
-        gameCompletedScreen.setUp(level.marks);
+        gameCompletedScreen.setUp(level.marks, rank);
     }
 
     void teacherTurnAround() {
@@ -193,7 +196,13 @@ public class MainControl : MonoBehaviour
                     if(level.marks > PlayerPrefs.GetInt("HighestScore", 0)) {
                         PlayerPrefs.SetInt("HighestScore", level.marks);
                     }
-                    gameCompleted();
+                    for(int i=0; i<4; i++) {
+                        if(level.marks >= rank_score[i]) {
+                            rank = rank_name[i];
+                            break;
+                        }
+                    }
+                    Invoke("gameCompleted", 4f);
                     return;
                 }
             }

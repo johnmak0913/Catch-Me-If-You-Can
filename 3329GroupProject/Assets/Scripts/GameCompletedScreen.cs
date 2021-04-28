@@ -7,13 +7,14 @@ using TMPro;
 
 public class GameCompletedScreen : MonoBehaviour
 {
-    public TMP_Text scoreText;
+    public TMP_Text scoreText, rankText;
     public static bool gameIsCompleted = false;
 
-    public void setUp(int score)
+    public void setUp(int score, string rank)
     {
         gameObject.SetActive(true);
-        scoreText.text = score.ToString();  // "Score: " + score.ToString();
+        scoreText.text = score.ToString();
+        rankText.text = rank;
         gameIsCompleted = true;
     }
 
