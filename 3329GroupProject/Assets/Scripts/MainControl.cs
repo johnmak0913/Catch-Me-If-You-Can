@@ -82,7 +82,7 @@ public class MainControl : MonoBehaviour
             if(!tTurnWaiting) {
                 tTurnWaiting=true;
                 tBackWaiting=false;
-                tTurnTimeLeft=UnityEngine.Random.Range(2.5f, level.tTurnPeriod);  // Adjust turn frequency
+                tTurnTimeLeft=UnityEngine.Random.Range(level.tTurnPeriodStart, level.tTurnPeriodEnd);  // Adjust turn frequency
                 return;
             }
             if(tTurnTimeLeft<=0) {
@@ -147,9 +147,13 @@ public class MainControl : MonoBehaviour
 
     void updateUI() {
         score.text="Score "+level.marks.ToString();
-        int min=level.displayTime/60;
-        int sec=level.displayTime%60;
-        time.text="Time "+min.ToString("00")+":"+sec.ToString("00");
+        if (currentLevel < 2) {
+            int min = level.displayTime / 60;
+            int sec = level.displayTime % 60;
+            time.text = "Time " + min.ToString("00") + ":" + sec.ToString("00");
+        } else {
+            time.text = "Time   ∞";
+        }
     }
 
     // Start is called before the first frame update
@@ -163,12 +167,12 @@ public class MainControl : MonoBehaviour
         actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2, 1, 10, -0.08f, 0.01f));
         actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 2, 20, 0.04f, -0.05f));
         actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 3, 30, 0.07f, 0.08f));
-        
-        // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriod)
+
+        // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriodStart, tTurnPeriodEnd)
         levels = new Level[] {
-            new Level("MaleTeacher", 60, 200, 0.8f, 10f),
-            new Level("FemaleTeacher", 40, 300, 0.5f, 7f),
-            new Level("OldTeacher", 30, 500, 0.4f, 5f)
+            new Level("MaleTeacher", 60, 200, 0.8f, 3f, 10f),
+            new Level("FemaleTeacher", 40, 300, 0.5f, 2f, 7f),
+            new Level("OldTeacher", 5, 400, 0.4f, 1f, 4.5f)
         };
         prepareNextLevel();
         caught = false;
@@ -184,18 +188,23 @@ public class MainControl : MonoBehaviour
             return;
         }
         if(caught) {
+            if (currentLevel == 2) {
+                if (level.marks >= level.lMarks) {
+                    if(level.marks > PlayerPrefs.GetInt("HighestScore", 0)) {
+                        PlayerPrefs.SetInt("HighestScore", level.marks);
+                    }
+                    gameCompleted();
+                    return;
+                }
+            }
             Invoke("gameOver", 4f);  // Wait for 4s(caught audio) then invoke game over screen
             waitGameOver = true;
             return;
         }
-        if(!level.updateTimer()) {
+        if(!level.updateTimer() && currentLevel!=2) {
             Time.timeScale = 0f;
             if (level.marks >= level.lMarks) {
-                if (currentLevel < 2) {
-                    levelCompleted();
-                } else {  // Final level
-                    gameCompleted();
-                }
+                levelCompleted();
             } else {
                 gameOver();
             }

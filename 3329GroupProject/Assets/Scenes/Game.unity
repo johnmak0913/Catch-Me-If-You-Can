@@ -5390,7 +5390,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\t\t\tLevel 1\t\tLevel 2\t\tLevel 3\nMin Score\t\t  200\t\t   300\t\t  
-    500\nTime Limit\t   60s\t\t    40s\t\t     \u221E\nDifficulty\t\t  Easy\t        
+    400\nTime Limit\t   60s\t\t    40s\t\t     \u221E\nDifficulty\t\t  Easy\t        
     Medium\t\t  Hard"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -6482,7 +6482,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\t\t\tEat\t\t\tSleep\t\t    Chat\nKey\t\t\t  A\t\t\t    S\t\t\t      
     D\nPoints\t\t 10\t\t\t   20\t\t\t      30\nPress\t\t 2s \t\t\t   3s\t\t\t     
-    4s\nCool Down\t 3s\t\t\t   4s\t\t\t      5s"
+    4s\nCool Down\t  1s\t\t\t   2s\t\t\t      3s"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

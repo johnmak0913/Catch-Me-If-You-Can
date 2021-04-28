@@ -9,18 +9,19 @@ public class Level : MonoBehaviour
     public TeacherMovement teacher;
     public string teacherName;
     private GameObject teacherObj, teacherPf;
-    public float tTurnDelay, tTurnPeriod;
+    public float tTurnDelay, tTurnPeriodStart, tTurnPeriodEnd;
     public int displayTime;
     private float counter=0.0f;
     public bool started=false;
-    public Level(string teacher, float timeLimit, int lMarks, float tTurnDelay, float tTurnPeriod) {
+    public Level(string teacher, float timeLimit, int lMarks, float tTurnDelay, float tTurnPeriodStart, float tTurnPeriodEnd) {
         teacherName=teacher;
         teacherPf=Resources.Load<GameObject>("Prefabs/"+teacher);
         this.timeLimit=timeLeft=timeLimit;
         displayTime=(int)timeLimit;
         this.lMarks=lMarks;
         this.tTurnDelay=tTurnDelay;
-        this.tTurnPeriod=tTurnPeriod;
+        this.tTurnPeriodStart = tTurnPeriodStart;
+        this.tTurnPeriodEnd = tTurnPeriodEnd;
     }
     public void prepareTeacher() {
         teacherObj=Instantiate(teacherPf, new Vector3(4.91f, 1.06f, 0f), Quaternion.identity);
