@@ -168,7 +168,7 @@ public class MainControl : MonoBehaviour
         levels = new Level[] {
             new Level("MaleTeacher", 60, 200, 0.8f, 10f),
             new Level("FemaleTeacher", 40, 300, 0.5f, 7f),
-            new Level("OldTeacher", 30, 400, 0.4f, 5f)
+            new Level("OldTeacher", 30, 500, 0.4f, 5f)
         };
         prepareNextLevel();
         caught = false;
