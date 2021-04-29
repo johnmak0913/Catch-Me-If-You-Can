@@ -5397,8 +5397,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: -150}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: -276, y: -150}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045549463
 MonoBehaviour:
@@ -5555,7 +5555,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "~ Score enough points within the time limit to reach the next  level\n~
-    Score points by pressing the corresponding keys for\n    the required number
+    Score points by pressing the corresponding keys for the required\n    number
     of seconds\r\n~ Action will cool down when the key is released\r\n~ Earn a rank
     by obtaining the targeted score in the final level"
   m_isRightToLeft: 0
@@ -8160,8 +8160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: -190}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: -237, y: -190}
+  m_SizeDelta: {x: 280, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764881368
 MonoBehaviour:
