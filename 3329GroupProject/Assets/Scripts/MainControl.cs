@@ -27,7 +27,7 @@ public class MainControl : MonoBehaviour
     AudioClip audioClip;
     private string rank = "";
     public static string[] rank_name = {"Notorious", "Troublesome", "Disobedient", "Naughty"};
-    public static int[] rank_score = {1000, 800, 600, 400};
+    public static int[] rank_score = {1000, 800, 600, 350};
 
     public void prepareNextLevel() {
         if(currentLevel>=2) {
@@ -173,9 +173,9 @@ public class MainControl : MonoBehaviour
 
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriodStart, tTurnPeriodEnd)
         levels = new Level[] {
-            new Level("MaleTeacher", 60, 200, 0.8f, 3f, 10f),
-            new Level("FemaleTeacher", 40, 300, 0.5f, 2f, 7f),
-            new Level("OldTeacher", 5, 400, 0.4f, 1f, 4.5f)
+            new Level("MaleTeacher", 60, 150, 0.8f, 3f, 10f),
+            new Level("FemaleTeacher", 40, 250, 0.5f, 2f, 7f),
+            new Level("OldTeacher", 5, 350, 0.4f, 1f, 4.5f)
         };
         prepareNextLevel();
         caught = false;

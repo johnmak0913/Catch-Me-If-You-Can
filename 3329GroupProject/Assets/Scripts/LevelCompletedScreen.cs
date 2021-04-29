@@ -18,7 +18,7 @@ public class LevelCompletedScreen : MonoBehaviour
     public void setUp(int score)  // score not used yet
     {
         gameObject.SetActive(true);
-        scoreText.text = "Seems Like You're Good At\nBeing A Bad Student ( ͡° ͜ʖ ͡°)";
+        // scoreText.text = "Seems Like You're Good At\nBeing A Bad Student ( ͡° ͜ʖ ͡°)";
         levelIsCompleted = true;
     }
 

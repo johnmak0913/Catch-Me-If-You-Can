@@ -15,7 +15,7 @@ public class GameOverScreen : MonoBehaviour
         gameObject.SetActive(true);
         if (MainControl.caught)
         {
-            scoreText.text = "You Got Caught!!\nDetention After Class \\( ´0´)/";  // "Score: " + score.ToString();
+            // scoreText.text = "You Got Caught!!\nDetention After Class \\( @o@)/";  // "Score: " + score.ToString();
         }
         else
         {
