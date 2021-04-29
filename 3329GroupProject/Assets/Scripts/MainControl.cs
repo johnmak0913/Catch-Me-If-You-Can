@@ -47,6 +47,7 @@ public class MainControl : MonoBehaviour
     }
     public void gameOver()
     {
+        setHighestScore();
         gameOverScreen.setUp(level.marks);
     }
 
@@ -57,6 +58,7 @@ public class MainControl : MonoBehaviour
 
     public void gameCompleted()
     {
+        setHighestScore();
         gameCompletedScreen.setUp(level.marks, rank);
     }
 
@@ -173,13 +175,29 @@ public class MainControl : MonoBehaviour
 
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriodStart, tTurnPeriodEnd)
         levels = new Level[] {
-            new Level("MaleTeacher", 60, 150, 0.8f, 3f, 10f),
-            new Level("FemaleTeacher", 40, 250, 0.5f, 2f, 7f),
-            new Level("OldTeacher", 5, 350, 0.4f, 1f, 4.5f)
+            new Level("MaleTeacher", 60, 180, 0.8f, 3f, 10f),
+            new Level("FemaleTeacher", 40, 300, 0.55f, 2.5f, 7f),
+            new Level("OldTeacher", 5, 350, 0.45f, 1.5f, 4.5f)
         };
         prepareNextLevel();
         caught = false;
         level.start();
+    }
+
+    private void setHighestScore()
+    {
+        if (level.marks > PlayerPrefs.GetInt("HighestScore", 0))
+        {
+            PlayerPrefs.SetInt("HighestScore", level.marks);
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            if (level.marks >= rank_score[i])
+            {
+                rank = rank_name[i];
+                break;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -192,16 +210,7 @@ public class MainControl : MonoBehaviour
         }
         if(caught) {
             if (currentLevel == 2) {
-                if (level.marks >= level.lMarks) {
-                    if(level.marks > PlayerPrefs.GetInt("HighestScore", 0)) {
-                        PlayerPrefs.SetInt("HighestScore", level.marks);
-                    }
-                    for(int i=0; i<4; i++) {
-                        if(level.marks >= rank_score[i]) {
-                            rank = rank_name[i];
-                            break;
-                        }
-                    }
+                if (level.marks >= level.lMarks) {  // Won
                     Invoke("gameCompleted", 4f);
                     return;
                 }

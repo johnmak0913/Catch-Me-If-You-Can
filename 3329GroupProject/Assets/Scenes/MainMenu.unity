@@ -4357,7 +4357,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\t\t\tEat\t\t\tSleep\t\t    Chat\nKey\t\t\t  A\t\t\t    S\t\t\t      
-    D\nPoints\t\t 10\t\t\t   20\t\t\t      30\nPress\t\t 2s \t\t\t   3s\t\t\t     
+    D\nPoints\t\t 10\t\t\t   20\t\t\t      30\nComplete\t\t 2s \t\t\t   3s\t\t\t     
     4s\nCool Down\t  1s\t\t\t   2s\t\t\t      3s"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
