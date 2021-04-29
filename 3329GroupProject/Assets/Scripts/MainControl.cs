@@ -27,7 +27,7 @@ public class MainControl : MonoBehaviour
     AudioClip audioClip;
     private string rank = "";
     public static string[] rank_name = {"Notorious", "Troublesome", "Disobedient", "Naughty"};
-    public static int[] rank_score = {1000, 800, 600, 350};
+    public static int[] rank_score = {800, 600, 500, 400};
 
     public void prepareNextLevel() {
         if(currentLevel>=2) {
@@ -169,15 +169,15 @@ public class MainControl : MonoBehaviour
         plusScore.gameObject.SetActive(false);
 
         // Action: (clip, audio, cdIcon, actionKey, holdFor, coolDown, marks, xOffset, yOffset)
-        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2, 1, 10, -0.08f, 0.01f));
-        actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 2, 20, 0.04f, -0.05f));
-        actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 3, 30, 0.07f, 0.08f));
+        actions.Add(new Action("Player_Eating", "Eating", "EatCD", KeyCode.A, 2.5f, 3, 10, -0.08f, 0.01f));
+        actions.Add(new Action("Player_Sleeping", "Sleeping", "SleepCD", KeyCode.S, 3, 4, 20, 0.04f, -0.05f));
+        actions.Add(new Action("Player_Talking", "Talking", "TalkCD", KeyCode.D, 4, 5, 30, 0.07f, 0.08f));
 
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriodStart, tTurnPeriodEnd)
         levels = new Level[] {
             new Level("MaleTeacher", 60, 180, 0.8f, 3f, 10f),
-            new Level("FemaleTeacher", 40, 300, 0.55f, 2.5f, 7f),
-            new Level("OldTeacher", 5, 350, 0.45f, 1.5f, 4.5f)
+            new Level("FemaleTeacher", 40, 300, 0.52f, 2f, 5.5f),
+            new Level("OldTeacher", 5, 400, 0.42f, 1.1f, 3.6f)
         };
         prepareNextLevel();
         caught = false;
