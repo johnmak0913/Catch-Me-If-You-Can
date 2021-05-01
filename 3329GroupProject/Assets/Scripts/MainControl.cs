@@ -175,9 +175,9 @@ public class MainControl : MonoBehaviour
 
         // Level: (teacher, timeLimit, lMarks, tTurnDelay, tTurnPeriodStart, tTurnPeriodEnd)
         levels = new Level[] {
-            new Level("MaleTeacher", 60, 180, 0.8f, 3f, 10f),
-            new Level("FemaleTeacher", 40, 300, 0.52f, 2f, 5.5f),
-            new Level("OldTeacher", 5, 400, 0.42f, 1.1f, 3.6f)
+            new Level("MaleTeacher", 60, 160, 0.8f, 3.8f, 10f),
+            new Level("FemaleTeacher", 40, 280, 0.52f, 2.6f, 5.7f),
+            new Level("OldTeacher", 5, 400, 0.42f, 1.3f, 3.5f)
         };
         prepareNextLevel();
         caught = false;
