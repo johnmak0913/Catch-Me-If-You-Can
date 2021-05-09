@@ -164,7 +164,7 @@ public class MainControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pAnim=GameObject.Find("Player").GetComponent<PlayerAnimation>();
+        pAnim =GameObject.Find("Player").GetComponent<PlayerAnimation>();
         plusScore.enabled = false;
         plusScore.gameObject.SetActive(false);
 
